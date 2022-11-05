@@ -22,7 +22,7 @@ app.get("/", (req, res) => {
 //    “x”: Integer,
 //    “y”: Integer }
 
-app.post("/", (req, res) => {
+app.post("/calculate", (req, res) => {
   // res.send('Got a POST request')
   var operation = req.body.operation_type;
   var x = req.body.x;
