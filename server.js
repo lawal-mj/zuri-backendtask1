@@ -16,7 +16,9 @@ app.get("/", (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  res.send('Got a POST request')
+  // res.send('Got a POST request')
+  console.log(req.body)
+
 })
 
 app.listen(process.env.PORT || port, () => {
